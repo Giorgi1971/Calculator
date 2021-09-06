@@ -13,10 +13,13 @@
     
 
     <table>
-    <tr>
-        <td colspan="5" style="text-align: right; padding-right: 30px;">0</td>
-    </tr>
-    <tr>
+        <tr>
+            <td id="capscreen" colspan="5" style="text-align: right; padding-right: 30px;">0</td>
+        </tr>
+        <!-- <tr>
+            <td id="scr1" colspan="5" style="text-align: right; padding-right: 30px;">43</td>
+        </tr> -->
+            <tr>
         <td>MC</td>
         <td>MR</td>
         <td>MS</td>
@@ -25,38 +28,38 @@
     </tr>
     <tr>
         <td>←</td>
-        <td>CE</td>
-        <td>C</td>
+        <td onclick="click0(this)">CE</td>
+        <td onclick="click0(this)">C</td>
         <td>±</td>
         <td>√</td>
     </tr>
 
     <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>/</td>
-        <td>%</td>
+        <td onclick="clickNum(this)">7</td>
+        <td onclick="clickNum(this)">8</td>
+        <td onclick="clickNum(this)">9</td>
+        <td onclick="clickNum(this)">/</td>
+        <td onclick="clickNum(this)">%</td>
     </tr>
     <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>*</td>
-        <td>¼</td>
+        <td onclick="clickNum(this)">4</td>
+        <td onclick="clickNum(this)">5</td>
+        <td onclick="clickNum(this)">6</td>
+        <td onclick="clickNum(this)">*</td>
+        <td onclick="clickNum(this)">¼</td>
     </tr>
     <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>–</td>
-        <td rowspan="2" style="font-size: 30px;">=</td>
+        <td onclick="clickNum(this)">1</td>
+        <td onclick="clickNum(this)">2</td>
+        <td onclick="clickNum(this)">3</td>
+        <td onclick="clickNum(this)">-</td>
+        <td rowspan="2" style="font-size: 30px;" onclick="clickSum(this)">=</td>
     </tr>
 
     <tr>
-        <td colspan="2">0</td>
-        <td>.</td>
-        <td>+</td>
+        <td onclick="clickNum(this)" colspan="2">0</td>
+        <td onclick="clickNum(this)">.</td>
+        <td onclick="clickNum(this)">+</td>
     </tr>
 
 
