@@ -1,19 +1,14 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color:darkgreen;
+    color:rgb(20, 70, 20);
     margin: auto;
 }
 
 table{
-    border: 1px solid rebeccapurple;
+    border: 5px solid darkred;
     padding: 20px 50PX;
     border-spacing: 15px;
-    background-color:lightgrey;
-}
-
-th{
-    border: 1px solid darkred;
-
+    background-color:rgb(145, 145, 145);
 }
 
 td{
@@ -22,9 +17,9 @@ td{
     /* font-weight: bold; */
     width: 50px;
     height: 40PX;
-    border: 1px solid darkred;
+    border: 2px solid darkred;
     padding: 10px;
     margin: 20px;
     text-align: center;
-    background-color: oldlace;
+    background-color:rgb(230, 230, 230);
 }
