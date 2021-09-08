@@ -1,10 +1,7 @@
 console.log("Hello in Giorgi's Calculator!")
 
-document.getElementsByTagName("td").innerHTML = "Hello World!";
-
-
 // ცვლადების შემოტანა ოპერაციების სამართავად:
-var scr = document.getElementById("capscreen");
+var scr = document.querySelector('#capscreen');
 
 // f ცვლადი - პირველი სიმბოლოს ასაკრებად გამოვიყენებთ
 var f = 1;
@@ -15,22 +12,32 @@ var operation = ''
 
 // რიცხვებზე დაჭერისას ეშვება ეს ფუნქცია. თუ ნულია ახლიდან წერს, თუ სხვა ამატებს მარჯვენა მხრიდან
 // გასასწორებელია, რომ გამოთვლის შესრულების შემდეგ, მარჯვნიდან კი არ ამატებდეს, არამედ ახლიდან იწყებდეს ციფრის აკრებას
-function clickNum(th){
-    if (document.getElementById("capscreen").textContent == 0){
-        sc1 = th.textContent
+function clickNum(num){
+    if (f){
+        console.log(scr);
+        console.log('f = 1 and then f = 0 ...');
+        scr.textContent = num;
+        f = 0;
     }else{
-        var sc1 = document.getElementById("capscreen").textContent;
-        sc1 += th.textContent;
+        scr.textContent += num;
     }
-    document.getElementById("capscreen").innerHTML = sc1;
 }
 
 // = დაჭერისას როცა გვინდა რომ ეკრანზე მყოფი წარწერა დაიანგარიშოს და გამოგვიტანოს
 // გასასწორებელია თუ ეკრანზე წარწერა არასწორია არ ან მთავდრება ციფრზე, მოქმედება არ შეასრულოს (ლოგ-ში შეცდომას აგდებს)
-function clickSum(th) {
-    total = eval(document.getElementById("capscreen").textContent);
-    console.log(total);
-    document.getElementById("capscreen").innerHTML = total;
+function clickOper(oper) {
+    f = 1;
+    if (!a && !operation){
+        a = scr.textContent;
+        console.log(a);
+        operation = oper;
+        console.log(operation);
+    }else{
+        b = scr.textContent;
+        c = eval((a+operation+b));
+        a = scr.innerHTML = eval((a+operation+b));
+        operation = oper;
+    }
 }
 
 // C -ზე დაჭერისას როდესაც გვინდა რომ ეკრანზე განულდეს მნიშვნელობა 
@@ -39,8 +46,8 @@ function click0(th) {
 }
 
 //  <- ღილაკზე დაჭერისას ბოლო სიმბოლოს წაშლა
-document.getElementById("delLast").addEventListener("click", function() {
-    scr3 = document.getElementById("capscreen").textContent;
-    scr3.pop()
+// document.getElementById("delLast").addEventListener("click", function() {
+//     scr3 = document.getElementById("capscreen").textContent;
+//     scr3.pop()
     
-  });
+//   });

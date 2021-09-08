@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="calculator.js"></script>
-    <link rel="stylesheet" href="calculator.css">
-
+    <link rel="stylesheet" href="calc.css">
+    
 </head>
 <body>
     
-
+    
     <table>
         <caption>Calculator "Gorgo Mas'ani"</caption>
         <tr>
@@ -20,53 +19,54 @@
         <!-- <tr>
             <td id="scr1" colspan="5" style="text-align: right; padding-right: 30px;">43</td>
         </tr> -->
-            <tr>
-        <td>MC</td>
-        <td>MR</td>
-        <td>MS</td>
-        <td>M+</td>
-        <td>M-</td>
-    </tr>
+        <tr>
+            <td>MC</td>
+            <td>MR</td>
+            <td>MS</td>
+            <td>M+</td>
+            <td>M-</td>
+        </tr>
+        <tr>
+            <td id="delLast">←</td>
+            <td onclick="clickCE(this)">CE</td>
+            <td onclick="clickC(this)">C</td>
+            <td>±</td>
+            <td>√</td>
+        </tr>
+        
+        <tr>
+            <td onclick="clickNum(7)">7</td>
+            <td onclick="clickNum(8)">8</td>
+            <td onclick="clickNum(9)">9</td>
+            <td onclick="clickOper('/')">/</td>
+            <td onclick="clickOper('%')">%</td>
+        </tr>
+        <tr>
+            <td onclick="clickNum(4)">4</td>
+            <td onclick="clickNum(5)">5</td>
+            <td onclick="clickNum(6)">6</td>
+            <td onclick="clickOper('*')">*</td>
+            <td onclick="clickOper('1/x')">¼</td>
+        </tr>
     <tr>
-        <td id="delLast">←</td>
-        <td onclick="click0(this)">CE</td>
-        <td onclick="click0(this)">C</td>
-        <td>±</td>
-        <td>√</td>
-    </tr>
-
-    <tr>
-        <td onclick="clickNum(this)">7</td>
-        <td onclick="clickNum(this)">8</td>
-        <td onclick="clickNum(this)">9</td>
-        <td onclick="clickNum(this)">/</td>
-        <td onclick="clickNum(this)">%</td>
-    </tr>
-    <tr>
-        <td onclick="clickNum(this)">4</td>
-        <td onclick="clickNum(this)">5</td>
-        <td onclick="clickNum(this)">6</td>
-        <td onclick="clickNum(this)">*</td>
-        <td onclick="clickNum(this)">¼</td>
-    </tr>
-    <tr>
-        <td onclick="clickNum(this)">1</td>
-        <td onclick="clickNum(this)">2</td>
-        <td onclick="clickNum(this)">3</td>
-        <td onclick="clickNum(this)">-</td>
+        <td onclick="clickNum(1)">1</td>
+        <td onclick="clickNum(2)">2</td>
+        <td onclick="clickNum(3)">3</td>
+        <td onclick="clickOper('-')">-</td>
         <td rowspan="2" style="font-size: 30px;" onclick="clickSum(this)">=</td>
     </tr>
-
+    
     <tr>
-        <td onclick="clickNum(this)" colspan="2">0</td>
-        <td onclick="clickNum(this)">.</td>
-        <td onclick="clickNum(this)">+</td>
+        <td onclick="clickNum(0)" colspan="2">0</td>
+        <td onclick="clickNum('.')">.</td>
+        <td onclick="clickOper('+')">+</td>
     </tr>
+    
+    
+</table>
 
 
-  </table>
 
-
-
+<script src="calc.js"></script>
 </body>
 </html>
