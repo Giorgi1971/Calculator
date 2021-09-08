@@ -33,21 +33,38 @@ function clickOper(oper) {
         operation = oper;
         console.log(operation);
     }else{
-        b = scr.textContent;
-        c = eval((a+operation+b));
-        a = scr.innerHTML = eval((a+operation+b));
+        a = scr.innerHTML = eval((a+operation+scr.textContent));
         operation = oper;
     }
 }
 
-// C -ზე დაჭერისას როდესაც გვინდა რომ ეკრანზე განულდეს მნიშვნელობა 
-function click0(th) {
-    document.getElementById("capscreen").innerHTML = 0;
+
+function clickCE() {
+    scr.innerHTML="0";
+    f = 1;
+    a = operation = b = c = "";
 }
 
-//  <- ღილაკზე დაჭერისას ბოლო სიმბოლოს წაშლა
-// document.getElementById("delLast").addEventListener("click", function() {
-//     scr3 = document.getElementById("capscreen").textContent;
-//     scr3.pop()
-    
-//   });
+// = ნიშანზე ფუნქციის მოქმედებები:
+function clickSum() {
+    f = 1;
+    if (a && operation){
+        a = scr.innerHTML = eval((a+operation+scr.textContent));
+        a = operation = b = c = "";
+    }
+}
+
+// C -ზე დაჭერისას როდესაც გვინდა რომ ეკრანზე განულდეს მნიშვნელობა 
+function clickC(th) {
+    scr.innerHTML="0";
+    f = 1;
+    a = operation = b = c = "";
+}
+
+// ღილაკზე დაჭერისას ბოლო სიმბოლოს წაშლა
+document.getElementById("delLast").addEventListener("click", function() {
+    scr3 = scr.textContent;
+    console.log(scr3);
+    scr3.pop();
+    scr.innerHTML = scr3;
+  });
