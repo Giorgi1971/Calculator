@@ -5,19 +5,25 @@
 }
 
 table{
-    border: 5px solid darkred;
-    padding: 20px 50PX;
+    border: 3px solid darkred;
+    padding: 50px 30px 30px 30px;
     border-spacing: 15px;
     background-color:rgb(145, 145, 145);
 }
 
+caption{
+    padding: 10px;
+    color:darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
 td{
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     /* font-weight: bold; */
     width: 50px;
     height: 40PX;
-    border: 2px solid darkred;
+    border: 1px solid darkred;
     padding: 10px;
     margin: 20px;
     text-align: center;
