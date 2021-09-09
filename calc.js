@@ -65,6 +65,24 @@ function clickC(th) {
 document.getElementById("delLast").addEventListener("click", function() {
     scr3 = scr.textContent;
     console.log(scr3);
-    scr3.pop();
+    scr3 = scr3.slice(0,scr3.length-1);
     scr.innerHTML = scr3;
   });
+
+
+  document.getElementById("plusMinus").addEventListener("click", function() {
+    scr.innerHTML = scr.textContent * (-1);
+    f =1;
+});
+
+
+document.getElementById("procent").addEventListener("click", function() {
+    scr.innerHTML = scr.textContent/100;
+    f =1;
+});
+
+document.getElementById("kube").addEventListener("click", function() {
+    scr.innerHTML = scr.textContent**0.5;
+    f = 1;
+});
+
