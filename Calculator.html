@@ -10,52 +10,52 @@
 <body>
     <table>
         <tr>
-            <td id="capscreen" colspan="5" style="text-align: right; padding-right: 30px;">0</td>
+            <td id="capscreen" colspan="5" style="text-align: right;">0</td>
         </tr>
         <!-- <tr>
             <td id="scr1" colspan="5" style="text-align: right; padding-right: 30px;">43</td>
         </tr> -->
         <tr>
-            <td>MC</td>
-            <td>MR</td>
-            <td>MS</td>
-            <td>M+</td>
-            <td>M-</td>
+            <td class="mm">MC</td>
+            <td class="mm">MR</td>
+            <td class="mm">MS</td>
+            <td class="mm">M+</td>
+            <td class="mm">M-</td>
         </tr>
         <tr>
-            <td id="delLast">←</td>
-            <td onclick="clickCE(this)">CE</td>
-            <td onclick="clickCE(this)">C</td>
-            <td id="plusMinus">±</td>
-            <td id="kube">√</td>
+            <td id="delLast" class="opers">←</td>
+            <td onclick="clickCE(this)" class="opers">CE</td>
+            <td onclick="clickCE(this)" class="opers">C</td>
+            <td id="plusMinus" class="opers">±</td>
+            <td id="kube" class="opers">√</td>
         </tr>
         
         <tr>
-            <td onclick="clickNum(7)">7</td>
-            <td onclick="clickNum(8)">8</td>
-            <td onclick="clickNum(9)">9</td>
-            <td onclick="clickOper('/')">/</td>
-            <td id="procent">%</td>
+            <td onclick="clickNum(7)" class="numbs">7</td>
+            <td onclick="clickNum(8)" class="numbs">8</td>
+            <td onclick="clickNum(9)" class="numbs">9</td>
+            <td onclick="clickOper('/')" class="opers">/</td>
+            <td id="procent" class="opers">%</td>
         </tr>
         <tr>
-            <td onclick="clickNum(4)">4</td>
-            <td onclick="clickNum(5)">5</td>
-            <td onclick="clickNum(6)">6</td>
-            <td onclick="clickOper('*')">*</td>
-            <td onclick="clickOper('1/x')">¼</td>
+            <td onclick="clickNum(4)" class="numbs">4</td>
+            <td onclick="clickNum(5)" class="numbs">5</td>
+            <td onclick="clickNum(6)" class="numbs">6</td>
+            <td onclick="clickOper('*')" class="opers">*</td>
+            <td onclick="clickOper('1/x')" class="opers">¼</td>
         </tr>
     <tr>
-        <td onclick="clickNum(1)">1</td>
-        <td onclick="clickNum(2)">2</td>
-        <td onclick="clickNum(3)">3</td>
-        <td onclick="clickOper('-')">-</td>
-        <td rowspan="2" style="font-size: 30px;" onclick="clickSum()">=</td>
+        <td onclick="clickNum(1)" class="numbs">1</td>
+        <td onclick="clickNum(2)" class="numbs">2</td>
+        <td onclick="clickNum(3)" class="numbs">3</td>
+        <td onclick="clickOper('-')" class="opers">–</td>
+        <td rowspan="2" style="font-size: 30px;" onclick="clickSum()" class="opers">=</td>
     </tr>
     
     <tr>
-        <td onclick="clickNum(0)" colspan="2">0</td>
-        <td onclick="clickNum('.')">.</td>
-        <td onclick="clickOper('+')">+</td>
+        <td onclick="clickNum(0)" colspan="2" class="numbs">0</td>
+        <td onclick="clickNum('.')" class="numbs">.</td>
+        <td onclick="clickOper('+')" class="opers">+</td>
     </tr>
     
     
