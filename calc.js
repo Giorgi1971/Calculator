@@ -1,3 +1,6 @@
+// mm = window.open('/ubu/Speqtri_2021/JS/2021_09_07_Calculator/Calculator.html', '_parent', 'width=400,height=500,left=400');
+// setTimeout(window.close(), 10000);
+window.self.resizeTo(200, 200);
 console.log("Hello in Giorgi's Calculator!")
 
 // ცვლადების შემოტანა ოპერაციების სამართავად:
