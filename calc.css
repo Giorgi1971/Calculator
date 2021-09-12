@@ -7,7 +7,7 @@
 
 table{
     border: 2px solid grey;
-    padding: 50px 30px 30px 30px;
+    padding: 30px;
     border-spacing: 10px;
     background-color:rgb(217, 228, 241);
 }
@@ -24,7 +24,7 @@ td{
     text-shadow: 0 0 2px white;
     border-radius: 5px;
     padding: 10px;
-    margin: 20px;
+    /* margin: 20px; */
     text-align: center;
     /* background-color:rgb(220, 231, 243); */
 }

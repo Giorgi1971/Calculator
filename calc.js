@@ -1,12 +1,12 @@
 // mm = window.open('/ubu/Speqtri_2021/JS/2021_09_07_Calculator/Calculator.html', '_parent', 'width=400,height=500,left=400');
 // setTimeout(window.close(), 10000);
-window.self.resizeTo(200, 200);
+// window.self.resizeTo(200, 200);
 console.log("Hello in Giorgi's Calculator!")
 
 // ცვლადების შემოტანა ოპერაციების სამართავად:
 var scr = document.querySelector('#capscreen');
 
-// f ცვლადი - პირველი სიმბოლოს ასაკრებად გამოვიყენებთ
+// f ცვლადი - თავიდან რომ დაიწყოს აკრეფა ამიტომ გამოვიყენებთ
 var f = 1;
 // a, b, და c ცვლედები a+b=c 
 var a = b = c ='';
@@ -72,18 +72,19 @@ document.getElementById("delLast").addEventListener("click", function() {
     scr.innerHTML = scr3;
   });
 
-
+// =-
   document.getElementById("plusMinus").addEventListener("click", function() {
     scr.innerHTML = scr.textContent * (-1);
     f =1;
 });
 
-
+// %
 document.getElementById("procent").addEventListener("click", function() {
     scr.innerHTML = scr.textContent/100;
     f =1;
 });
 
+// √
 document.getElementById("kube").addEventListener("click", function() {
     scr.innerHTML = scr.textContent**0.5;
     f = 1;
